@@ -1,4 +1,5 @@
-### 在本地使用Virutalenv创建虚拟环境，为推送代码到heroku做准备
+## 将django应用部署到heroku（免费）
+### 在本地使用Virtualenv创建虚拟环境，为推送代码到heroku做准备
 1. 安装pipenv
 ```
 pip install pipenv
