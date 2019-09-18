@@ -79,6 +79,8 @@ pip freeze > requirements.txt
 ```
 代码推送到heroku以后，heroku会依据这个requirements.txt文件安装所依赖的应用。
 
+代码文件目录结构将如下所示：
+![代码目录](media/django.JPG)
 
 ### 使用git将本地代码推送到Heroku
 
