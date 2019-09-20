@@ -1,0 +1,107 @@
+﻿{% extends "Resume/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles%}
+
+<section class="generic-banner">	
+	<!-- Start Header Area -->
+	<header class="default-header">
+		<nav class="navbar navbar-expand-lg  navbar-light">
+			<div class="container">
+					<a class="navbar-brand" href="{% url 'home' %}">
+							  	<img src="{% static 'Resume/img/logo.png'%}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="text-white lnr lnr-menu"></span>
+					</button>
+
+					<div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li><a href="{% url 'home'%}">Home</a></li>
+                        <li><a href="{% url 'home'%}#service">Service</a></li>
+						<li><a href="{% url 'home'%}#about">About</a></li>
+						<li><a href="{% url 'projects'%}#project">Projects</a></li>
+						<li><a href="{% url 'home'%}#contact">Contact</a></li>
+						<!-- Dropdown -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							Demo
+							</a>
+							<div class="dropdown-menu">
+                            <a class="dropdown-item" href="{% url 'projects'%}">Projects</a>
+							<a class="dropdown-item" href="{% url 'gallery'%}">Gallery</a>
+                            <a class="dropdown-item" href="{% url 'animation'%}">Video</a>
+							</div>
+						</li>										
+					</ul>
+					</div>						
+			</div>
+		</nav>
+	</header>
+	<!-- End Header Area -->							
+	<div class="container">
+		<div class="row height align-items-center justify-content-center">
+			<div class="col-lg-10">
+				<div class="generic-banner-content">
+					<h2 class="text-white">The Video Page</h2>
+					<p class="text-white">Recording moments for best memories.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	
+
+
+<!-- Start project Area -->
+<section class="project-area section-gap" id="project">
+	<div class="container">
+
+        <div class="row">
+            <div class="col-md-12 single-project">
+                <div class="single-project pb-100">
+					<div class="embed-responsive embed-responsive-21by9">
+					    <iframe class="embed-responsive-item" width="100%" height="498" src="http://player.youku.com/embed/XNDM1NDIzOTYwOA==" frameborder="0" allowfullscreen></iframe>
+					</div>	   
+					<h4 class="pt-100 pb-30"><a href="#">Happy Teacher's Day</a></h4>
+					<p>
+						Teacher's day is the perfect day to express how you feel for your teacher. And nothing can be better than a hand made video with heartfelt personalised words. We made it as a gift to my daughter's teacher on 2019 Teachers' Day.
+					</p>
+				</div>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-md-12 single-project">
+                <div class="single-project pb-100">
+					<div class="embed-responsive embed-responsive-21by9">
+					    <iframe class="embed-responsive-item" width="100%" height="498" src="http://player.youku.com/embed/XNDM1NDIzNzkwNA==" frameborder="0" allowfullscreen></iframe>
+					</div>	   
+					<h4 class="pt-100 pb-30"><a href="#">Happy Teacher's Day</a></h4>
+					<p>
+						Teacher's day is the perfect day to express how you feel for your teacher. And nothing can be better than a hand made video with heartfelt personalised words. We made it as a gift to my daughter's teacher on 2019 Teachers' Day.
+					</p>
+				</div>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-md-12 single-project">
+                <div class="single-project pb-100">
+					<div class="embed-responsive embed-responsive-21by9">
+					    <iframe class="embed-responsive-item" width="100%" height="498" src="http://player.youku.com/embed/XNDIxMTk1ODk3Ng==" frameborder="0" allowfullscreen></iframe>
+					</div>	   
+					<h4 class="pt-100 pb-30"><a href="#">Childhood Moments</a></h4>
+					<p>
+						 A precious record of my daughters' childhoods.
+					</p>
+				</div>
+            </div>
+        </div>
+
+	</div>	
+</section>
+<!-- End project Area -->
+
+
+{% endblock %}

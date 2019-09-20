@@ -1,0 +1,361 @@
+﻿{% extends "Resume/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles%}
+			<!-- start banner Area -->
+			<section class="banner-area" id="home">
+				<!-- Start Header Area -->
+				<header class="default-header">
+					<nav class="navbar navbar-expand-lg  navbar-light">
+						<div class="container">
+							  <a class="navbar-brand" href="{% url 'home' %}">
+							  	<img src="{% static 'Resume/img/logo.png'%}" alt="">
+							  </a>
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							    <span class="text-white lnr lnr-menu"></span>
+							  </button>
+
+							  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+							    <ul class="navbar-nav">
+									<li><a href="#home">Home</a></li>
+									<li><a href="#service">Service</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="{%url 'projects'%}#project">Projects</a></li>
+									<li><a href="#contact">Contact</a></li>
+									<!-- Dropdown -->
+						            <li class="dropdown">
+							            <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							            Demo
+							            </a>
+							            <div class="dropdown-menu">
+							            <a class="dropdown-item" href="{% url 'projects'%}">Projects</a>
+							            <a class="dropdown-item" href="{% url 'gallery'%}">Gallery</a>
+                                        <a class="dropdown-item" href="{% url 'animation'%}">Video</a>
+							            </div>
+						            </li>								
+							    </ul>
+							  </div>						
+						</div>
+					</nav>
+				</header>
+				<!-- End Header Area -->				
+			<div class="container">
+				<div class="row justify-content-start align-items-center">
+					<div class="col-lg-6 col-md-12 no-padding banner-right">
+						<img class="img-fluid" src="{% static 'Resume/img/header-img.png'%}" alt="">
+					</div>						
+					<div class="col-lg-6 col-md-12 banner-left">
+						<h1 class="text-white">
+							Hi, I'm <br>
+							<span>Qijie Xue</span> <br>
+							Project Manager, Programmer, Photographer						
+						</h1>
+						<p class="mx-auto text-white  mt-20 mb-40">
+							Lead and collabrate 30 people working on content publishing in online education industry, code in mainstream programming languages like C#, Python, and shoot in Nikon & Fujifilm cameras.
+						</p>
+						<a href="mailto:qijiexue@outlook.com" class="text-uppercase header-btn">Let Us Talk</span></a>
+					</div>
+				</div>
+			</div>
+			</section>
+			<!-- End banner Area -->	
+			
+			<!-- Start service Area -->
+			<section class="service-area section-gap" id="service"> 
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Have a Look at my Services</h1>
+								<p>Who are in extremely love with innovation work.</p>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="single-service col-lg-6 col-md-6 mb-30">
+							<div class="icon">
+								<img src="{% static 'Resume/img/s1.png'%}" alt="">
+							</div>
+							<div class="dec">
+								<h4 class="mt-30"><a href="#">Content Assembly</a></h4>			
+								<p class="mt-20">
+									Convert content from various format into Markdown format, create course outline & assemble content, videos, knowledge check in Content Management System(CMS).
+								</p>								
+							</div>
+						</div>
+						<div class="single-service col-lg-6 col-md-6 mb-30">
+							<div class="icon">
+								<img src="{% static 'Resume/img/s2.png'%}" alt="">
+							</div>
+							<div class="dec">
+								<h4 class="mt-30"><a href="#">Quality Check</a></h4>			
+								<p class="mt-20">
+									Design test cases targeting specific CMS platforms, carry out testing on content layout, UI element functionality, lab steps functionality, compliance,etc. to publish high qualtity content.
+								</p>								
+							</div>
+						</div>
+						<div class="single-service col-lg-6 col-md-6">
+							<div class="icon">
+								<img src="{% static 'Resume/img/s3.png'%}" alt="">
+							</div>
+							<div class="dec">
+								<h4 class="mt-30"><a href="#">Automation</a></h4>			
+								<p class="mt-20">
+									Examine existing publishing process with creative thinking, design & implement full-automated or semi-automated content publishing system to smooth the process and improve work efficiency.
+								</p>								
+							</div>
+						</div>
+						<div class="single-service col-lg-6 col-md-6">
+							<div class="icon">
+								<img src="{% static 'Resume/img/s4.png'%}" alt="">
+							</div>
+							<div class="dec">
+								<h4 class="mt-30"><a href="#">Miscellaneous</a></h4>			
+								<p class="mt-20">
+									Simply video editing like cut timeline, blur video, video closed caption creation, text to speech, cover design and creation, interactive page creation, LOC engineering work, etc.
+								</p>								
+							</div>
+						</div>																		
+					</div>
+				</div>	
+			</section>
+			<!-- End service Area -->
+			
+			<!-- Start about Area -->
+			<section class="about-area section-gap" id="about">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">About Myself</h1>
+								<p>Who are in extremely love with innovation work.</p>
+							</div>
+						</div>
+					</div>					
+					<div class="row">
+						<div class="col-lg-6 about-left">
+							<p>
+								It won't be a big problem to find a guy with both management skill and technical skill, since so many geekers like me who are in management role but always keep updated to the latest technologies. <i>Coding makes my work and life easier</i>.
+							</p>
+							<h4 class="pb-40">Tools Expertness</h4>
+                                <div class="skillbar" data-percent="75%">
+				                    <div class="skill-bar-percent">Project management 75%</div>
+				                    <div class="skillwrap">
+				                    	<div class="skillbar-bar" style="width: 75%;"></div>
+				                    </div>
+				                </div>
+                                <div class="skillbar" data-percent="80%">
+				                    <div class="skill-bar-percent">Communication 80%</div>
+				                    <div class="skillwrap">
+				                    	<div class="skillbar-bar" style="width: 80%;"></div>
+				                    </div>
+				                </div>
+                               <div class="skillbar" data-percent="85%">
+				                    <div class="skill-bar-percent">C# 85%</div>
+				                    <div class="skillwrap">
+				                    	<div class="skillbar-bar" style="width: 85%;"></div>
+				                    </div>
+				                </div>
+                               <div class="skillbar" data-percent="85%">
+				                    <div class="skill-bar-percent">SQL-database 85%</div>
+				                    <div class="skillwrap">
+				                    	<div class="skillbar-bar" style="width: 85%;"></div>
+				                    </div>
+				                </div>
+                               <div class="skillbar" data-percent="70%">
+				                    <div class="skill-bar-percent">HTML, CSS, JS 70%</div>
+				                    <div class="skillwrap">
+				                    	<div class="skillbar-bar" style="width: 70%;"></div>
+				                    </div>
+				                </div>
+				                <div class="skillbar" data-percent="70%">
+				                    <div class="skill-bar-percent">Adobe Photoshop & Premier 70%</div>
+				                    <div class="skillwrap">
+				                    	<div class="skillbar-bar" style="width: 70%;"></div>
+									</div>
+				                </div>		                
+						</div>
+						<div class="col-lg-6 about-right justify-content-end d-flex">
+							<div class="myself-wrap">
+								<img class="img-fluid" src="{% static 'Resume/img/about-img.jpg'%}" alt="">
+								<div class="desc">
+									<h4>Qijie Xue</h4>
+									<p class="pb-10">Software Engineer</p>
+									<p><span class="lnr lnr-phone"></span> (86) +86 136 7174 2667</p>
+									<p><span class="lnr lnr-envelope"></span> qijiexue@outlook.com</p>
+									<a class="mt-30 text-uppercase talk-btn" href="mailto:qijiexue@outlook.com">Hire Me</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End about Area -->
+			
+			<!-- Start qualification Area -->
+			<section class="qualification-area pt-100 pb-80">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-20 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">My Qualifications</h1>
+								<p>Who are in extremely love with innovation work.</p>
+							</div>
+						</div>
+					</div>							
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-6 col-md-6 qty-left">
+							<div class="single-qly">
+								<h3 class="text-uppercase">Microsoft(Contractor)</h3>
+								<p>July 2016 to Present</p>
+								<h4 class="pt-20 pb-20">Project Manager</h4>
+								<p>
+									Managing the collaborative work of more than 30 people on two teams in Shanghai and India.
+								</p>							
+							</div>
+							<div class="btm-border d-block mx-auto"></div>								
+							<div class="single-qly">
+								<h3 class="text-uppercase">Microsoft(Contractor)</h3>
+								<p>March 2010 to Present</p>
+								<h4 class="pt-20 pb-20">Software engineer</h4>
+								<p>
+									Analize requirements, design test case and carry out testing on software.
+								</p>								
+							</div>							
+						</div>
+						<div class="col-lg-6 col-md-6 qty-right">
+							<div class="single-qly">
+								<h4 class="pb-20">Masters in Software Engineering</h4>
+								<p><b>Session</b>: 2015-05 (Shanghai Jiao Tong University)</p>								
+								<p><b>Result</b>:  3.75 (In the Scale of 4.00)</p>									
+							</div>
+							<div class="btm-border d-block mx-auto"></div>							
+							<div class="single-qly">
+								<h4 class="pb-20">Bachelor in Software Engineering</h4>
+								<p><b>Session</b>: 2009-07 (Yantai University)</p>								
+								<p><b>Result</b>:  3.40 (In the Scale of 4.00)</p>									
+							</div>																											
+						</div>						
+					</div>
+				</div>	
+			</section>
+			<!-- End qualification Area -->
+			
+			<!-- Start feature Area -->
+			<section class="feature-area pt-100">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Some Features that Made us Unique</h1>
+								<p>Who are in extremely love with innovation work.</p>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature mb-30">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-rocket"></span>
+									<h4><a href="#">Fast Learner</a></h4>
+								</div>
+								<p>
+								 I really enjoy learning new things and find that it’s easy for me to pick up on required skills.
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature mb-30">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-bicycle"></span>
+									<h4><a href="#">Self-motivation</a></h4>
+								</div>
+								<p>
+									I’m driven to complete a task, no matter how difficult.
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature mb-30">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-heart"></span>
+									<h4><a href="#">Enjoyment</a></h4>
+								</div>
+								<p>
+									I truly enjoy excelling and pushing myself. I look forward to tasks where I can learn and grow.
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-license"></span>
+									<h4><a href="#">Professional Service</a></h4>
+								</div>
+								<p>
+									Professional project management at content publishing, interact with client authors for on-schedule handoff, monitor and coordinate the execution of assembly, testing and publishing to target platforms.
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-diamond"></span>
+									<h4><a href="#">Accomplishment</a></h4>
+								</div>
+								<p>
+									In a past job, I communicated and collabrated with 20 team members to deliver 100 courses to 2 channels within 3 weeks.
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-code"></span>
+									<h4><a href="#">Technical Skills</a></h4>
+								</div>
+								<p>
+									I love coding in C# or any mainstream languages to automate my work. I know well about git, json, sql, js which makes my work done efficiently.
+								</p>							
+							</div>							
+						</div>																					
+					</div>
+				</div>	
+			</section>
+			<!-- End feature Area -->
+							
+			<!-- start contact Area -->		
+			<section class="contact-area section-gap" id="contact">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-20 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">If you need, Just drop us a line</h1>
+								<p>Who are in extremely love with innovation work.</p>
+							</div>
+						</div>
+					</div>										
+					<form class="form-area mt-60" id="myForm" action="" method="post" class="contact-form text-right">
+						{% csrf_token%}
+                        <div class="row">	
+						<div class="col-lg-6 form-group">
+							<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
+						
+							<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
+
+							<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required="" type="text">
+						</div>
+						<div class="col-lg-6 form-group">
+							<textarea class="common-textarea mt-10 form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+							<button class="primary-btn mt-20">Send Message<span class="lnr lnr-arrow-right"></span></button>
+							<div class="alert-msg">								
+						</div>
+						</div></div>
+					</form>						
+					
+				</div>	
+			</section>
+			<!-- end contact Area -->		
+			
+{% endblock %}

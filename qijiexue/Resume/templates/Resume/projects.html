@@ -1,0 +1,107 @@
+﻿{% extends "Resume/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles%}
+
+<section class="generic-banner">	
+	<!-- Start Header Area -->
+	<header class="default-header">
+		<nav class="navbar navbar-expand-lg  navbar-light">
+			<div class="container">
+					<a class="navbar-brand" href="{% url 'home' %}">
+							  	<img src="{% static 'Resume/img/logo.png'%}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="text-white lnr lnr-menu"></span>
+					</button>
+
+					<div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li><a href="{% url 'home'%}">Home</a></li>
+                        <li><a href="{% url 'home'%}#service">Service</a></li>
+						<li><a href="{% url 'home'%}#about">About</a></li>
+				        <li><a href="{%url 'projects'%}#project">Projects</a></li>
+						<li><a href="{% url 'home'%}#contact">Contact</a></li>
+						<!-- Dropdown -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							Demo
+							</a>
+							<div class="dropdown-menu">
+                            <a class="dropdown-item" href="{% url 'projects'%}">Projects</a>
+							<a class="dropdown-item" href="{% url 'gallery'%}">Gallery</a>
+                            <a class="dropdown-item" href="{% url 'animation'%}">Video</a>
+							</div>
+						</li>										
+					</ul>
+					</div>						
+			</div>
+		</nav>
+	</header>
+	<!-- End Header Area -->							
+	<div class="container">
+		<div class="row height align-items-center justify-content-center">
+			<div class="col-lg-10">
+				<div class="generic-banner-content">
+					<h2 class="text-white">The Projects Page</h2>
+					<p class="text-white text-center">In a past job, I communicated and collabrated with 20 team members <br />to deliver 100 courses to 2 channels within 3 weeks.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	
+
+
+<!-- Start project Area -->
+<section class="project-area section-gap" id="project">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="menu-content pb-70 col-lg-8">
+				<div class="title text-center">
+					<h1 class="mb-10">Latest Done Projects</h1>
+					<p>Who are in extremely love with innovation work.</p>
+				</div>
+			</div>
+		</div>					
+		<div class="row">
+			<div class="col-lg-6 project-left">
+				<div class="single-project pb-100">
+					<img class="img-fluid" src="{% static 'Resume/img/l1.jpg'%}" alt="">
+					<h4 class="pt-100 pb-30"><a href="#">Publishing to MS Learn</a></h4>
+					<p>
+						Simplified the publishing process by generating YAML files from Azure DevOps work items, made the Azure DevOps be the only entry for authoring, publishing, version control system.
+                        <ul class="unordered-list">
+                            <li>Defined easy-to-use work item types in Azure DevOps.</li>
+                            <li>Provided clear workflow for content proposal, design, production and publishing.</li>
+                            <li>Implemented crystal clear and meaningful report.</li>
+                        </ul>
+					</p>
+				</div>
+
+                            
+													
+			</div>
+			<div class="col-lg-6 project-right">
+					<div class="single-project">
+					<img class="img-fluid" src="{% static 'Resume/img/l3.jpg'%}" alt="">
+					<h4 class="pt-100 pb-30"><a href="#">Publishing to edX.org</a></h4>
+					<p>
+						Automated the content publishing process by converting Markdown files and folders into tar.gz packages, import the tar.gz packages to edX studio.
+                        <ul class="unordered-list">
+                            <li>Provided flexible assembly service for various source format.</li>
+                            <li>Automated the publishing process, enabled client author publishing at anytime by themselves.</li>
+                            <li>Created high customized animation pages to enhance learning experience.</li>
+                        </ul>
+					</p>
+				</div>							
+			</div>
+		</div>
+
+
+	</div>	
+</section>
+<!-- End project Area -->
+
+
+{% endblock %}

@@ -1,0 +1,142 @@
+﻿{% extends "Resume/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles%}
+
+<section class="generic-banner">	
+	<!-- Start Header Area -->
+	<header class="default-header">
+		<nav class="navbar navbar-expand-lg  navbar-light">
+			<div class="container">
+					<a class="navbar-brand" href="{% url 'home' %}">
+							  	<img src="{% static 'Resume/img/logo.png'%}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="text-white lnr lnr-menu"></span>
+					</button>
+
+					<div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li><a href="{% url 'home'%}">Home</a></li>
+                        <li><a href="{% url 'home'%}#service">Service</a></li>
+						<li><a href="{% url 'home'%}#about">About</a></li>
+						<li><a href="{%url 'projects'%}#project">Projects</a></li>
+						<li><a href="{% url 'home'%}#contact">Contact</a></li>
+						<!-- Dropdown -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							Demo
+							</a>
+							<div class="dropdown-menu">
+                            <a class="dropdown-item" href="{% url 'projects'%}">Projects</a>
+							<a class="dropdown-item" href="{% url 'gallery'%}">Gallery</a>
+                            <a class="dropdown-item" href="{% url 'animation'%}">Video</a>
+							</div>
+						</li>										
+					</ul>
+					</div>						
+			</div>
+		</nav>
+	</header>
+	<!-- End Header Area -->							
+	<div class="container">
+		<div class="row height align-items-center justify-content-center">
+			<div class="col-lg-10">
+				<div class="generic-banner-content">
+					<h2 class="text-white">The Pictures Page</h2>
+					<p class="text-white">I love taking photograph as if it's my life.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	
+
+<section class="button-area">
+    <div class="container">
+	    <div class="section-top-border">
+		    <h3>People Pictures</h3>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <blockquote class="generic-blockquote">
+                        Young girl is playing in synthetic racetracks and lawn at Mid-Autumn Festival.
+                    </blockquote>
+                </div>
+            </div>
+		    <div class="row gallery-item">
+			    <div class="col-md-3">
+				    <a href="{% static 'Resume/img/elements/g1.jpg'%}" class="img-pop-up"><div class="mb-3 pics animation all 1"><img class="img-fluid" src="{% static 'Resume/img/elements/g1.jpg'%}"/></div></a>
+			    </div>
+			    <div class="col-md-3">
+				    <a href="{% static 'Resume/img/elements/g2.jpg'%}" class="img-pop-up"><div class="mb-3 pics animation all 1"><img class="img-fluid" src="{% static 'Resume/img/elements/g2.jpg'%}"/></div></a>
+			    </div>
+			    <div class="col-md-3">
+				    <a href="{% static 'Resume/img/elements/g3.jpg'%}" class="img-pop-up"><div class="mb-3 pics animation all 1"><img class="img-fluid" src="{% static 'Resume/img/elements/g3.jpg'%}"/></div></a>
+			    </div>
+			    <div class="col-md-3">
+				    <a href="{% static 'Resume/img/elements/g4.jpg'%}" class="img-pop-up"><div class="mb-3 pics animation all 1"><img class="img-fluid" src="{% static 'Resume/img/elements/g4.jpg'%}"/></div></a>
+			    </div>
+			    <div class="col-md-3">
+				    <a href="{% static 'Resume/img/elements/g5.jpg'%}" class="img-pop-up"><div class="mb-3 pics animation all 1"><img class="img-fluid" src="{% static 'Resume/img/elements/g5.jpg'%}"/></div></a>
+			    </div>
+			    <div class="col-md-3">
+				    <a href="{% static 'Resume/img/elements/g6.jpg'%}" class="img-pop-up"><div class="mb-3 pics animation all 1"><img class="img-fluid" src="{% static 'Resume/img/elements/g6.jpg'%}"/></div></a>
+			    </div>
+			    <div class="col-md-3">
+				    <a href="{% static 'Resume/img/elements/g7.jpg'%}" class="img-pop-up"><div class="mb-3 pics animation all 1"><img class="img-fluid" src="{% static 'Resume/img/elements/g7.jpg'%}"/></div></a>
+			    </div>
+			    <div class="col-md-3">
+				    <a href="{% static 'Resume/img/elements/g8.jpg'%}" class="img-pop-up"><div class="mb-3 pics animation all 1"><img class="img-fluid" src="{% static 'Resume/img/elements/g8.jpg'%}"/></div></a>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+</section>
+
+
+<section class="button-area">
+    <div class="container">
+	    <div class="section-top-border">
+		    <h3>View Pictures</h3>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <blockquote class="generic-blockquote">
+                        Landscape photos shoot in Yantai.
+                    </blockquote>
+                </div>
+            </div>
+		    <div class="row gallery-item">
+			    <div class="col-md-4">
+				    <a href="{% static 'Resume/img/elements/v1.jpg'%}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'Resume/img/elements/v1.jpg'%});"></div></a>
+			    </div>
+			    <div class="col-md-4">
+				    <a href="{% static 'Resume/img/elements/v2.jpg'%}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'Resume/img/elements/v2.jpg'%});"></div></a>
+			    </div>
+			    <div class="col-md-4">
+				    <a href="{% static 'Resume/img/elements/v3.jpg'%}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'Resume/img/elements/v3.jpg'%});"></div></a>
+			    </div>
+			    <div class="col-md-4">
+				    <a href="{% static 'Resume/img/elements/v4.jpg'%}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'Resume/img/elements/v4.jpg'%});"></div></a>
+			    </div>
+			    <div class="col-md-4">
+				    <a href="{% static 'Resume/img/elements/v5.jpg'%}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'Resume/img/elements/v5.jpg'%});"></div></a>
+			    </div>
+			    <div class="col-md-4">
+				    <a href="{% static 'Resume/img/elements/v6.jpg'%}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'Resume/img/elements/v6.jpg'%});"></div></a>
+			    </div>
+			    <div class="col-md-4">
+				    <a href="{% static 'Resume/img/elements/v7.jpg'%}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'Resume/img/elements/v7.jpg'%});"></div></a>
+			    </div>
+			    <div class="col-md-4">
+				    <a href="{% static 'Resume/img/elements/v8.jpg'%}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'Resume/img/elements/v8.jpg'%});"></div></a>
+			    </div>
+				<div class="col-md-4">
+				    <a href="{% static 'Resume/img/elements/v9.jpg'%}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'Resume/img/elements/v9.jpg'%});"></div></a>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+</section>
+{% endblock %}
